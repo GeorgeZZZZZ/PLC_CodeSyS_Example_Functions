@@ -77,7 +77,7 @@
           <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
           <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
         </Array>
-        <Single Name="Timestamp" Type="long">636562758787237700</Single>
+        <Single Name="Timestamp" Type="long">636565453610431594</Single>
       </Single>
       <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
         <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
@@ -175,9 +175,14 @@
                 <Single Name="Text" Type="string">	Servo_Testment_State := -5;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">28</Single>
+                <Single Name="Id" Type="long">1462</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">28</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">LastAxis := Num_of_Axis_GV;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">222</Single>
@@ -237,12 +242,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">437</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">FOR j := 1 TO WORD_TO_INT(Num_of_Axis_GV) DO</Single>
+                <Single Name="Text" Type="string">FOR re_j := 1 TO WORD_TO_INT(Num_of_Axis_GV) DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">436</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	read_axis[j](axis := j - 1, enable :=  TRUE);</Single>
+                <Single Name="Text" Type="string">	read_axis[re_j](axis := re_j - 1, enable :=  TRUE);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">580</Single>
@@ -362,12 +367,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">871</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Set_Do[7]:= TRUE;</Single>
+                <Single Name="Text" Type="string">	//Set_Do[7]:= TRUE;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1016</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Set_Do[8]:= TRUE;</Single>
+                <Single Name="Text" Type="string">	//Set_Do[8]:= TRUE;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">869</Single>
@@ -422,7 +427,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">495</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i; // error axis;</Single>
+                <Single Name="Text" Type="string">		ts_i; // error axis;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">497</Single>
@@ -432,7 +437,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">496</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i; // error axis</Single>
+                <Single Name="Text" Type="string">		ts_i; // error axis</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">428</Single>
@@ -447,7 +452,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">569</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i; // error axis</Single>
+                <Single Name="Text" Type="string">		ts_i; // error axis</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">565</Single>
@@ -462,7 +467,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">568</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i;	// error axis</Single>
+                <Single Name="Text" Type="string">		ts_i;	// error axis</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">400</Single>
@@ -477,7 +482,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">410</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		home_axis[i].ErrorID;	// homing err message</Single>
+                <Single Name="Text" Type="string">		home_axis[ts_i].ErrorID;	// homing err message</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">345</Single>
@@ -637,12 +642,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">560</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		FOR i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
+                <Single Name="Text" Type="string">		FOR ts_i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">561</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			home_axis[i](axis := i - 1, execute := FALSE);	// reset blocks</Single>
+                <Single Name="Text" Type="string">			home_axis[ts_i](axis := ts_i - 1, execute := FALSE);	// reset blocks</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">348</Single>
@@ -657,7 +662,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">365</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			i:= WORD_TO_INT(FirstAxis);</Single>
+                <Single Name="Text" Type="string">			ts_i:= WORD_TO_INT(FirstAxis);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">351</Single>
@@ -687,12 +692,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">367</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		Set_Do[7]:= TRUE;</Single>
+                <Single Name="Text" Type="string">		//Set_Do[7]:= TRUE;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">380</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		home_axis[i](axis := i - 1, execute := TRUE, position := 0, buffermode := mcAborting);</Single>
+                <Single Name="Text" Type="string">		home_axis[ts_i](axis := ts_i - 1, execute := TRUE, position := 0, buffermode := mcAborting);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">381</Single>
@@ -702,12 +707,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">384</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			FOR i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
+                <Single Name="Text" Type="string">			FOR ts_i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">383</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				home_axis[i](axis := i - 1, execute := FALSE);</Single>
+                <Single Name="Text" Type="string">				home_axis[ts_i](axis := ts_i - 1, execute := FALSE);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">386</Single>
@@ -722,7 +727,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">397</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		ELSIF home_axis[i].Done AND i &lt;= WORD_TO_INT(LastAxis) THEN // if current axis homing done</Single>
+                <Single Name="Text" Type="string">		ELSIF home_axis[ts_i].Done AND ts_i &lt;= WORD_TO_INT(LastAxis) THEN // if current axis homing done</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">378</Single>
@@ -732,12 +737,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">398</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			i := i + 1;</Single>
+                <Single Name="Text" Type="string">			ts_i := ts_i + 1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">402</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		ELSIF home_axis[i].Error THEN	// if current axis get err</Single>
+                <Single Name="Text" Type="string">		ELSIF home_axis[ts_i].Error THEN	// if current axis get err</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">562</Single>
@@ -767,22 +772,22 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">441</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i := WORD_TO_INT(FirstAxis - 1);</Single>
+                <Single Name="Text" Type="string">		ts_i := WORD_TO_INT(FirstAxis - 1);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">449</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		WHILE (i &lt; WORD_TO_INT(LastAxis)) AND Servo_Testment_State = 40 DO</Single>
+                <Single Name="Text" Type="string">		WHILE (ts_i &lt; WORD_TO_INT(LastAxis)) AND Servo_Testment_State = 40 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">445</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			i := i + 1;</Single>
+                <Single Name="Text" Type="string">			ts_i := ts_i + 1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">446</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF read_axis[i].Pos &gt; check_pos_err OR read_axis[i].Pos &lt; -check_pos_err THEN // if current axis pos more than check_pos_err</Single>
+                <Single Name="Text" Type="string">			IF read_axis[ts_i].Pos &gt; check_pos_err OR read_axis[ts_i].Pos &lt; -check_pos_err THEN // if current axis pos more than check_pos_err</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">447</Single>
@@ -807,7 +812,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">451</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			Set_Do[8]:= TRUE;</Single>
+                <Single Name="Text" Type="string">			//Set_Do[8]:= TRUE;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">452</Single>
@@ -827,12 +832,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">473</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		FOR i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
+                <Single Name="Text" Type="string">		FOR ts_i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">474</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			mov_axis[i](axis := i - 1, execute := FALSE);	// reset blocks</Single>
+                <Single Name="Text" Type="string">			mov_axis[ts_i](axis := ts_i - 1, execute := FALSE);	// reset blocks</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">454</Single>
@@ -877,22 +882,22 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">468</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i := WORD_TO_INT(FirstAxis - 1);</Single>
+                <Single Name="Text" Type="string">		ts_i := WORD_TO_INT(FirstAxis - 1);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">589</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		WHILE i &lt; WORD_TO_INT(LastAxis) AND Servo_Testment_State = 60 DO</Single>
+                <Single Name="Text" Type="string">		WHILE ts_i &lt; WORD_TO_INT(LastAxis) AND Servo_Testment_State = 60 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">469</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			i := i + 1;</Single>
+                <Single Name="Text" Type="string">			ts_i := ts_i + 1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">481</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			mov_axis[i](axis := i - 1, Execute := TRUE, Position := FirstPos</Single>
+                <Single Name="Text" Type="string">			mov_axis[ts_i](axis := ts_i - 1, Execute := TRUE, Position := FirstPos</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">482</Single>
@@ -912,7 +917,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">488</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF mov_axis[i].Done THEN</Single>
+                <Single Name="Text" Type="string">			IF mov_axis[ts_i].Done THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">492</Single>
@@ -922,7 +927,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">494</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			ELSIF  mov_axis[i].Error THEN</Single>
+                <Single Name="Text" Type="string">			ELSIF  mov_axis[ts_i].Error THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">941</Single>
@@ -967,12 +972,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">602</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			FOR i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
+                <Single Name="Text" Type="string">			FOR ts_i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">603</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				mov_axis[i](axis := i - 1, execute := FALSE);	// reset blocks</Single>
+                <Single Name="Text" Type="string">				mov_axis[ts_i](axis := ts_i - 1, execute := FALSE);	// reset blocks</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">501</Single>
@@ -997,22 +1002,22 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">506</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i :=  WORD_TO_INT(FirstAxis - 1);</Single>
+                <Single Name="Text" Type="string">		ts_i :=  WORD_TO_INT(FirstAxis - 1);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">507</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		WHILE i &lt; WORD_TO_INT(LastAxis) AND Servo_Testment_State = 70 DO</Single>
+                <Single Name="Text" Type="string">		WHILE ts_i &lt; WORD_TO_INT(LastAxis) AND Servo_Testment_State = 70 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">508</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			i := i + 1;</Single>
+                <Single Name="Text" Type="string">			ts_i := ts_i + 1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">509</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF FirstPos - read_axis[i].Pos &lt; -check_pos_err OR FirstPos - read_axis[i].Pos &gt; check_pos_err THEN // if current axis pos more than check_pos_err</Single>
+                <Single Name="Text" Type="string">			IF FirstPos - read_axis[ts_i].Pos &lt; -check_pos_err OR FirstPos - read_axis[ts_i].Pos &gt; check_pos_err THEN // if current axis pos more than check_pos_err</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">510</Single>
@@ -1067,22 +1072,22 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">518</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i := FirstAxis - 1;</Single>
+                <Single Name="Text" Type="string">		ts_i := FirstAxis - 1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">590</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		WHILE i &lt; WORD_TO_INT(LastAxis) AND Servo_Testment_State = 80 DO</Single>
+                <Single Name="Text" Type="string">		WHILE ts_i &lt; WORD_TO_INT(LastAxis) AND Servo_Testment_State = 80 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">520</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			i := i + 1;</Single>
+                <Single Name="Text" Type="string">			ts_i := ts_i + 1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">521</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			mov_axis[i](axis := i - 1, Execute := TRUE, Position := SecondPos</Single>
+                <Single Name="Text" Type="string">			mov_axis[ts_i](axis := ts_i - 1, Execute := TRUE, Position := SecondPos</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">522</Single>
@@ -1102,7 +1107,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">525</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF mov_axis[i].Done THEN</Single>
+                <Single Name="Text" Type="string">			IF mov_axis[ts_i].Done THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">526</Single>
@@ -1112,7 +1117,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">527</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			ELSIF  mov_axis[i].Error THEN</Single>
+                <Single Name="Text" Type="string">			ELSIF  mov_axis[ts_i].Error THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">528</Single>
@@ -1157,22 +1162,22 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">538</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i := FirstAxis - 1;</Single>
+                <Single Name="Text" Type="string">		ts_i := FirstAxis - 1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">539</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		WHILE i &lt; WORD_TO_INT(LastAxis) AND Servo_Testment_State = 90 DO</Single>
+                <Single Name="Text" Type="string">		WHILE ts_i &lt; WORD_TO_INT(LastAxis) AND Servo_Testment_State = 90 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">540</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			i := i + 1;</Single>
+                <Single Name="Text" Type="string">			ts_i := ts_i + 1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">541</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF SecondPos - read_axis[i].Pos &lt; -check_pos_err OR SecondPos - read_axis[i].Pos &gt; check_pos_err THEN // if current axis pos more than check_pos_err</Single>
+                <Single Name="Text" Type="string">			IF SecondPos - read_axis[ts_i].Pos &lt; -check_pos_err OR SecondPos - read_axis[ts_i].Pos &gt; check_pos_err THEN // if current axis pos more than check_pos_err</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">542</Single>
@@ -1197,12 +1202,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">605</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			FOR i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
+                <Single Name="Text" Type="string">			FOR ts_i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">606</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				mov_axis[i](axis := i - 1, execute := FALSE);	// reset blocks</Single>
+                <Single Name="Text" Type="string">				mov_axis[ts_i](axis := ts_i - 1, execute := FALSE);	// reset blocks</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">545</Single>
@@ -1737,12 +1742,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1277</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		FOR i := 1 TO WORD_TO_INT(Num_of_Axis_GV) DO</Single>
+                <Single Name="Text" Type="string">		FOR el_i := 1 TO WORD_TO_INT(Num_of_Axis_GV) DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1278</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			mov_axis[i](axis := i - 1, execute := FALSE);	// reset blocks</Single>
+                <Single Name="Text" Type="string">			mov_axis[el_i](axis := el_i - 1, execute := FALSE);	// reset blocks</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1338</Single>
@@ -1772,22 +1777,22 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">710</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i := 0;</Single>
+                <Single Name="Text" Type="string">		el_i := 0;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">711</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		WHILE i &lt; WORD_TO_INT(LastAxis - (FirstAxis - 1)) AND Servo_Testment_State &lt;&gt; -40 DO</Single>
+                <Single Name="Text" Type="string">		WHILE el_i &lt; WORD_TO_INT(LastAxis - (FirstAxis - 1)) AND Servo_Testment_State &lt;&gt; -40 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">712</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			i := i + 1;</Single>
+                <Single Name="Text" Type="string">			el_i := el_i + 1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">713</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			mov_axis[i](axis := i - 1, Execute := TRUE, Position := analogFirPos</Single>
+                <Single Name="Text" Type="string">			mov_axis[el_i](axis := el_i - 1, Execute := TRUE, Position := analogFirPos</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">714</Single>
@@ -1807,7 +1812,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">717</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF mov_axis[i].Done THEN</Single>
+                <Single Name="Text" Type="string">			IF mov_axis[el_i].Done THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">718</Single>
@@ -1817,7 +1822,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">719</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			ELSIF  mov_axis[i].Error THEN</Single>
+                <Single Name="Text" Type="string">			ELSIF  mov_axis[el_i].Error THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">720</Single>
@@ -1842,12 +1847,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1020</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			FOR i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
+                <Single Name="Text" Type="string">			FOR el_i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">727</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				mov_axis[i](axis := i - 1, execute := FALSE);	// reset blocks</Single>
+                <Single Name="Text" Type="string">				mov_axis[el_i](axis := el_i - 1, execute := FALSE);	// reset blocks</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">723</Single>
@@ -1877,22 +1882,22 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">731</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i := 0;</Single>
+                <Single Name="Text" Type="string">		el_i := 0;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">732</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		WHILE i &lt; WORD_TO_INT(LastAxis - (FirstAxis - 1)) AND Servo_Testment_State &lt;&gt; -40 DO</Single>
+                <Single Name="Text" Type="string">		WHILE el_i &lt; WORD_TO_INT(LastAxis - (FirstAxis - 1)) AND Servo_Testment_State &lt;&gt; -40 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">733</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			i := i + 1;</Single>
+                <Single Name="Text" Type="string">			el_i := el_i + 1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1026</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			mov_axis[i](axis := i - 1, Execute := TRUE, Position := analogSecPos</Single>
+                <Single Name="Text" Type="string">			mov_axis[el_i](axis := el_i - 1, Execute := TRUE, Position := analogSecPos</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">735</Single>
@@ -1912,7 +1917,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">738</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF mov_axis[i].Done THEN</Single>
+                <Single Name="Text" Type="string">			IF mov_axis[el_i].Done THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">739</Single>
@@ -1922,7 +1927,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">740</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			ELSIF  mov_axis[i].Error THEN</Single>
+                <Single Name="Text" Type="string">			ELSIF  mov_axis[el_i].Error THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">741</Single>
@@ -1947,12 +1952,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">745</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			FOR i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
+                <Single Name="Text" Type="string">			FOR el_i := WORD_TO_INT(FirstAxis) TO WORD_TO_INT(LastAxis) DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">746</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				mov_axis[i](axis := i - 1, execute := FALSE);	// reset blocks</Single>
+                <Single Name="Text" Type="string">				mov_axis[el_i](axis := el_i - 1, execute := FALSE);	// reset blocks</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">747</Single>
@@ -1977,17 +1982,17 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1347</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		FOR sc_i := 0 TO 5 DO</Single>
+                <Single Name="Text" Type="string">		FOR el_i := 0 TO 5 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1348</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			SpeedMovFir[sc_i](axis := sc_i,execute := FALSE);</Single>
+                <Single Name="Text" Type="string">			speedFirGroup[el_i](axis := el_i,execute := FALSE);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1349</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			SpeedMovSec[sc_i](axis := sc_i,execute := FALSE);</Single>
+                <Single Name="Text" Type="string">			speedSecGroup[el_i](axis := el_i,execute := FALSE);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1350</Single>
@@ -1997,12 +2002,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1351</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SCTimer(in := FALSE);</Single>
+                <Single Name="Text" Type="string">		elderTimer(in := FALSE);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1352</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SCGroupSwitch := FALSE;</Single>
+                <Single Name="Text" Type="string">		speedGroupSwitch := FALSE;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1354</Single>
@@ -2017,32 +2022,32 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1356</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SCTimer(in := TRUE, pt := SCMovTime);</Single>
+                <Single Name="Text" Type="string">		elderTimer(in := TRUE, pt := speedSwitchTime);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1357</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		IF SCTimer.Q THEN	// if time reached</Single>
+                <Single Name="Text" Type="string">		IF elderTimer.Q THEN	// if time reached</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1358</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF NOT SCGroupSwitch THEN	//decide which motor group is time to switch dir</Single>
+                <Single Name="Text" Type="string">			IF NOT speedGroupSwitch THEN	//decide which motor group is time to switch dir</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1359</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				SCGroupSwitch := TRUE;</Single>
+                <Single Name="Text" Type="string">				speedGroupSwitch := TRUE;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1360</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				IF SCFirDir = mcPositiveDirection THEN	// if first group is moving positivily</Single>
+                <Single Name="Text" Type="string">				IF speedFirDir = mcPositiveDirection THEN	// if first group is moving positivily</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1361</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">					SCFirDir := mcNegativeDirection;	// then switch to negative</Single>
+                <Single Name="Text" Type="string">					speedFirDir := mcNegativeDirection;	// then switch to negative</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1362</Single>
@@ -2052,7 +2057,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1363</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">					SCFirDir := mcPositiveDirection;</Single>
+                <Single Name="Text" Type="string">					speedFirDir := mcPositiveDirection;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1364</Single>
@@ -2067,17 +2072,17 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1366</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				SCGroupSwitch := FALSE;</Single>
+                <Single Name="Text" Type="string">				speedGroupSwitch := FALSE;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1367</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				IF SCSecDir = mcPositiveDirection THEN</Single>
+                <Single Name="Text" Type="string">				IF speedSecDir = mcPositiveDirection THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1368</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">					SCSecDir := mcNegativeDirection;</Single>
+                <Single Name="Text" Type="string">					speedSecDir := mcNegativeDirection;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1369</Single>
@@ -2087,7 +2092,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1370</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">					SCSecDir := mcPositiveDirection;</Single>
+                <Single Name="Text" Type="string">					speedSecDir := mcPositiveDirection;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1371</Single>
@@ -2107,12 +2112,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1374</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		FOR sc_i := 0 TO 5 BY 2 DO</Single>
+                <Single Name="Text" Type="string">		FOR el_i := 0 TO 5 BY 2 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1375</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			SpeedMovFir[sc_i](axis := sc_i,execute := NOT (SCTimer.Q AND SCGroupSwitch)	// only switch off when timer is alarted and first group direction is switched</Single>
+                <Single Name="Text" Type="string">			speedFirGroup[el_i](axis := el_i,execute := NOT (elderTimer.Q AND speedGroupSwitch)	// only switch off when timer is alarted and first group direction is switched</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1376</Single>
@@ -2122,12 +2127,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1410</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				, Direction := SCFirDir, Buffermode := mcAborting);</Single>
+                <Single Name="Text" Type="string">				, Direction := speedFirDir, Buffermode := mcAborting);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1411</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF  SpeedMovFir[sc_i].Error THEN</Single>
+                <Single Name="Text" Type="string">			IF  speedFirGroup[el_i].Error THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1412</Single>
@@ -2147,12 +2152,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1379</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		FOR sc_i := 1 TO 5 BY 2 DO</Single>
+                <Single Name="Text" Type="string">		FOR el_i := 1 TO 5 BY 2 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1380</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			SpeedMovSec[sc_i](axis := sc_i,execute := NOT (SCTimer.Q AND NOT SCGroupSwitch)	// only switch off when timer is alarted and second group direction is switched</Single>
+                <Single Name="Text" Type="string">			speedFirGroup[el_i](axis := el_i,execute := NOT (elderTimer.Q AND NOT speedGroupSwitch)	// only switch off when timer is alarted and second group direction is switched</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1381</Single>
@@ -2162,12 +2167,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1417</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				, Direction := SCSecDir, Buffermode := mcAborting);</Single>
+                <Single Name="Text" Type="string">				, Direction := speedSecDir, Buffermode := mcAborting);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1418</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF  SpeedMovSec[sc_i].Error THEN</Single>
+                <Single Name="Text" Type="string">			IF  speedFirGroup[el_i].Error THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1419</Single>
@@ -2192,12 +2197,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1385</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		IF SCTimer.Q THEN	// if time reached</Single>
+                <Single Name="Text" Type="string">		IF elderTimer.Q THEN	// if time reached</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1386</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			SCTimer(in := FALSE);	// switch off timer</Single>
+                <Single Name="Text" Type="string">			elderTimer(in := FALSE);	// switch off timer</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">677</Single>
@@ -2205,149 +2210,14 @@
                 <Single Name="Text" Type="string">		END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">676</Single>
+                <Single Name="Id" Type="long">1589</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">END_CASE</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1309</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">(*</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1310</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	-50: // analog cap and base difference too small</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1311</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		// please connection and input voltage</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1312</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		analog_cap[0];	// cap value</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1313</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		analog_base[0];	// base vaule</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1314</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1315</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	-45: // axis not mov to corrent pos</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1316</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i; // error axis;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1317</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	-40: // if axis get err when moving</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1318</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i; // error axis</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1319</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1320</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	-35: // if some axis is not near 0 after homing</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1321</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i; // error axis</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1322</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1323</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	-33: // if some axis home err or time out</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1324</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		i;	// error axis</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1325</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1326</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	-30: // if some axis home err</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1327</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		home_axis[i].ErrorID;	// homing err message</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1328</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1329</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	-20: // if some axis can not enable</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1330</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		enb_axis.Err_Message;	// enable err message</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1331</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1332</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	-10: // if button is not commanding right inputs</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1333</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		// plz check input button</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1334</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1335</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	-5:	// config file contain more than 6 axis and exceed this program can handle</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">962</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	*)</Single>
+                <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">963</Single>
@@ -2370,24 +2240,84 @@
                 <Single Name="Text" Type="string">CASE errlightcontrolstate OF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">957</Single>
+                <Single Name="Id" Type="long">1466</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	0:</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">996</Single>
+                <Single Name="Id" Type="long">1467</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		Set_Do[7]:= TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">957</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		Set_Do[8]:= TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1581</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">		IF Servo_Testment_State &lt; 0 THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">958</Single>
+                <Single Name="Id" Type="long">1582</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			ErrLightCounter := ABS(INT_TO_WORD(Servo_Testment_State));</Single>
+                <Single Name="Text" Type="string">			Set_Do[7]:= FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">996</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			Set_Do[8]:= FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1478</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLightCounterHigh := (ABS(Servo_Testment_State) / 10) MOD 10;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1480</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLightCounterLow := ABS(Servo_Testment_State) MOD 10;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1488</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLightTimer(in := FALSE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1495</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLight_i := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1502</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLight_Switch := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1557</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			IF ErrLightCounterHigh &gt; 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1555</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				errlightcontrolstate := 10;	// if there have higer num next state</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1559</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1556</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				errlightcontrolstate := 20;	// go to low num directily</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">959</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			errlightcontrolstate := 10;</Single>
+                <Single Name="Text" Type="string">			END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">960</Single>
@@ -2395,17 +2325,232 @@
                 <Single Name="Text" Type="string">		END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1508</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	10:	// blink higher number</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1496</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		Set_Do[7]:= ErrLight_Switch;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1497</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		ErrLightTimer(in := TRUE , pt:= ErrLightBlinkTime);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1510</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF ErrLightTimer.Q THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1513</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			IF ErrLight_Switch THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1514</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				ErrLight_Switch := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1516</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1512</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				ErrLight_Switch := TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1501</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1500</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLightTimer (in := FALSE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1499</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLight_i := ErrLight_i + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1504</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1552</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF ErrLight_i &gt;= (ErrLightCounterHigh * 2) THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1553</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLightTimer(in := FALSE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1554</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLight_i := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1561</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLight_Switch := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1565</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			IF ErrLightCounterLow &gt; 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1566</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				errlightcontrolstate := 20;	// if have lower num</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1568</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1564</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				errlightcontrolstate := 30;	// go wating time</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1506</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">961</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	10:</Single>
+                <Single Name="Text" Type="string">		END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1535</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	20:// blink lower number</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1536</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		Set_Do[8]:= ErrLight_Switch;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1537</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		ErrLightTimer(in := TRUE , pt:= ErrLightBlinkTime);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1538</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF ErrLightTimer.Q THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1539</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			IF ErrLight_Switch THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1540</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				ErrLight_Switch := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1541</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1542</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				ErrLight_Switch := TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1543</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1544</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLightTimer (in := FALSE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1545</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLight_i := ErrLight_i + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1547</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1570</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF ErrLight_i &gt;= (ErrLightCounterLow * 2) THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1571</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLightTimer(in := FALSE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1572</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLight_i := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1548</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ErrLight_Switch := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1549</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			errlightcontrolstate := 30;	// next state</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1479</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1573</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	30:</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1569</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		ErrLightTimer(in := TRUE, pt := ErrLightFinishTime);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1577</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF ErrLightTimer.Q THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1575</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			errlightcontrolstate := 0;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">956</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		</Single>
+                <Single Name="Text" Type="string">		END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">949</Single>
+                <Single Name="Id" Type="long">1477</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">END_CASE</Single>
               </Single>
@@ -2777,22 +2922,47 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1063</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">FOR d_i := 0 TO 5 DO</Single>
+                <Single Name="Text" Type="string">FOR cfg_i := 0 TO WORD_TO_INT(Num_of_axis) - 1 DO</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1079</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	PowerState[d_i](axis := d_i, enable := TRUE);</Single>
+                <Single Name="Text" Type="string">	PowerState[cfg_i](axis := cfg_i, enable := TRUE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1459</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	AxisMeasure[cfg_i](axis := cfg_i, enable := TRUE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1460</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	IF PowerState[cfg_i].State = 3 THEN // servo lost or error</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1461</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		Servo_Testment_State := -40;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1062</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	AxisMeasure[d_i](axis := d_i, enable := TRUE);</Single>
+                <Single Name="Text" Type="string">	END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1454</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_FOR</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1455</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1064</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">END_FOR</Single>
+                <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1065</Single>
@@ -3280,74 +3450,9 @@
                 <Single Name="Text" Type="string">			SCTimer(in := FALSE);	// switch off timer</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1160</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		END_IF</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1159</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		//check</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1161</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovFir[0].Active;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1162</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovSec[1].Active;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1163</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovFir[2].Active;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1164</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovSec[3].Active;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1165</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovFir[4].Active;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1166</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovSec[5].Active;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1167</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovFir[0].Busy;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1168</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovSec[1].Busy;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1169</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovFir[2].Busy;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1170</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovSec[3].Busy;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1171</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovFir[4].Busy;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1123</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		SpeedMovSec[5].Busy;</Single>
+                <Single Name="Text" Type="string">		END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1237</Single>
@@ -3360,44 +3465,9 @@
                 <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1244</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">IF NOT TSSwitch THEN</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1248</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	TSDir := mcNegativeDirection;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1249</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">ELSE</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1245</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	TSDir := mcPositiveDirection;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1238</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">END_IF</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1239</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">MovSpeed(axis := 0, execute := TryMS</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1240</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">				, velocity := SCVel, Acceleration := SCACC, Deceleration := SCACC, Jerk := SCJerk</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1038</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				, Direction := TSDir, Buffermode := mcAborting);</Single>
+                <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">5</Single>
@@ -3458,7 +3528,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">282</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	LastAxis : WORD := 6;</Single>
+                <Single Name="Text" Type="string">	LastAxis : WORD := 6;	// this value has been automaticlly asigned by global config reader</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">283</Single>
@@ -3551,14 +3621,19 @@
                 <Single Name="Text" Type="string">	read_axis : ARRAY [1..6] OF Arcalibrary.MCAT_ReadAxisMeasures;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">355</Single>
+                <Single Name="Id" Type="long">1453</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	home_axis : ARRAY [1..6] OF Arcalibrary.MC_Home;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">355</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	re_j : INT;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">394</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	i, j, k : INT;</Single>
+                <Single Name="Text" Type="string">	ts_i: INT;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">584</Single>
@@ -3751,9 +3826,24 @@
                 <Single Name="Text" Type="string">	// servo elder program</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1259</Single>
+                <Single Name="Id" Type="long">1592</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	servo_elder_state :INT := -1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1591</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	// elder_MoveType</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1590</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	// 0 msans postion control all axis stop and turn in same time</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1259</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	// 1 means speed control, two groups stop and turn in different times</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1263</Single>
@@ -3778,7 +3868,42 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">308</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	</Single>
+                <Single Name="Text" Type="string">	el_i : INT;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1446</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	speedFirGroup : ARRAY [0..5] OF ArcaLibrary.MC_MoveVelocity;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1447</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	speedSecGroup : ARRAY [0..5] OF ArcaLibrary.MC_MoveVelocity;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1448</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	elderTimer : ton;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1449</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	speedGroupSwitch : BOOL;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1451</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	speedSwitchTime : TIME := T#50MS;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1452</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	speedFirDir : ArcaLibrary.mc_Direction := mcPositiveDirection;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1450</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	speedSecDir : ArcaLibrary.mc_Direction := mcNegativeDirection;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">309</Single>
@@ -3921,14 +4046,14 @@
                 <Single Name="Text" Type="string">	//Movs : ARRAY [0..6] OF ArcaLibrary.MC_MoveLinearAbsolute;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">954</Single>
+                <Single Name="Id" Type="long">1463</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">950</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GiveErrLightTime : WORD;</Single>
+                <Single Name="Text" Type="string">	// error light control</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">952</Single>
@@ -3936,14 +4061,39 @@
                 <Single Name="Text" Type="string">	ErrLightControlState : INT;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">951</Single>
+                <Single Name="Id" Type="long">1482</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	ErrLightTimer : Ton;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1483</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	ErrLightBlinkTime : TIME := T#200MS;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">951</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	ErrLightFinishTime : TIME := T#500MS;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1470</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	ErrLightCounterHigh : INT;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1487</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	ErrLightCounterLow : INT;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1490</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	ErrLight_i : INT;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">878</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	ErrLightCounter : WORD;</Single>
+                <Single Name="Text" Type="string">	ErrLight_Switch : BOOL;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">936</Single>
@@ -4038,75 +4188,75 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1118</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	d_i, d_y : INT;</Single>
+                <Single Name="Text" Type="string">	cfg_i : INT;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1119</Single>
+                <Single Name="Id" Type="long">1432</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1128</Single>
+                <Single Name="Id" Type="long">1433</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	//speed control test</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1203</Single>
+                <Single Name="Id" Type="long">1434</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	SC_Enb : BOOL; </Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1197</Single>
+                <Single Name="Id" Type="long">1435</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	SCMovTime : TIME := T#50MS;</Single>
+                <Single Name="Text" Type="string">	SCMovTime : TIME := T#500MS;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1120</Single>
+                <Single Name="Id" Type="long">1436</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	SCTimer : TON;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1134</Single>
+                <Single Name="Id" Type="long">1437</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	SC_State : INT;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1125</Single>
+                <Single Name="Id" Type="long">1438</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	SC_i,SC_y : INT;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1133</Single>
+                <Single Name="Id" Type="long">1439</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	SpeedMovFir : ARRAY [0..5] OF ArcaLibrary.MC_MoveVelocity;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1152</Single>
+                <Single Name="Id" Type="long">1440</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	SpeedMovSec : ARRAY [0..5] OF ArcaLibrary.MC_MoveVelocity;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1153</Single>
+                <Single Name="Id" Type="long">1441</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	SCVel : REAL := 18000;</Single>
+                <Single Name="Text" Type="string">	SCVel : REAL := 1800;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1154</Single>
+                <Single Name="Id" Type="long">1442</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	SCACC : REAL := 900000;</Single>
+                <Single Name="Text" Type="string">	SCACC : REAL := 9000;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1121</Single>
+                <Single Name="Id" Type="long">1443</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	SCJerk : REAL := 45000000;</Single>
+                <Single Name="Text" Type="string">	SCJerk : REAL := 45000;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1194</Single>
+                <Single Name="Id" Type="long">1444</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	SCFirDir : ArcaLibrary.mc_Direction := mcPositiveDirection;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1193</Single>
+                <Single Name="Id" Type="long">1445</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	SCSecDir : ArcaLibrary.mc_Direction := mcNegativeDirection;</Single>
               </Single>
@@ -4116,34 +4266,9 @@
                 <Single Name="Text" Type="string">	SCGroupSwitch : BOOL;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1235</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1236</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	// test speed move</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1242</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	TryMS : BOOL;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1241</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	TSSwitch : BOOL;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">1246</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	MovSpeed : ArcaLibrary.MC_MoveVelocity;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1041</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	TSDir : ArcaLibrary.mc_Direction := mcPositiveDirection;</Single>
+                <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1035</Single>
@@ -4163,7 +4288,7 @@
             </Array>
           </Single>
         </Single>
-        <Single Name="UniqueIdGenerator" Type="string">1431</Single>
+        <Single Name="UniqueIdGenerator" Type="string">1592</Single>
         <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
         <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
         <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
