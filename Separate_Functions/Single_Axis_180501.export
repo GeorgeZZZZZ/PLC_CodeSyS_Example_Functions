@@ -7,7 +7,7 @@
       <Single Name="IsRoot" Type="bool">True</Single>
       <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
         <Single Name="Guid" Type="System.Guid">c6d6accc-bedc-4199-bab0-9cf57840d5ad</Single>
-        <Single Name="ParentGuid" Type="System.Guid">fa2632c8-a11c-4d71-8df4-00a64bb35d20</Single>
+        <Single Name="ParentGuid" Type="System.Guid">d999feb1-20e1-4653-a41f-1865cc83f556</Single>
         <Single Name="Name" Type="string">SingleAxis</Single>
         <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
         <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
@@ -15,7 +15,7 @@
           <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
           <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
         </Array>
-        <Single Name="Timestamp" Type="long">636556896508233179</Single>
+        <Single Name="Timestamp" Type="long">636607847266857032</Single>
       </Single>
       <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
         <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
@@ -23,14 +23,19 @@
           <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
             <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">121</Single>
+                <Single Name="Id" Type="long">194</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
+                <Single Name="Text" Type="string">// in the beginning, enable the axis and set status PowerOn</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">195</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">PowBlk(Axis := MovAxis, Enable:=Enable, EnablePositive:=TRUE, EnableNegative:=TRUE, Status=&gt;PowDone, Error=&gt;PowErr); </Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">116</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">PowBlk(Axis := MovAxis, Enable:=Enable, EnablePositive:=TRUE, EnableNegative:=TRUE, Status=&gt;PowDone, Error=&gt;PowErr);</Single>
+                <Single Name="Text" Type="string">// read the axis position</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">130</Single>
@@ -40,7 +45,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">115</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
+                <Single Name="Text" Type="string">// set the trigger in false</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">122</Single>
@@ -50,7 +55,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">127</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">StopMov(axis := MovAxis, execute := dis_trig.Q, Deceleration := acc*10, jerk := jerk*10);</Single>
+                <Single Name="Text" Type="string">StopMov(axis := MovAxis, execute := dis_trig.Q, Deceleration := acc*10, jerk := jerk*10); // if trigger is true, stop the movement. In that moment, tigger is false</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">20</Single>
@@ -65,7 +70,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">110</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	MovState := 20;</Single>
+                <Single Name="Text" Type="string">	MovState := 20;    // if startMov is set to false, reset the machine state to 20</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">16</Single>
@@ -75,7 +80,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">53</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">CASE MovState OF</Single>
+                <Single Name="Text" Type="string">CASE MovState OF // define different machine state</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">55</Single>
@@ -85,7 +90,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">56</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		IF PowDone THEN</Single>
+                <Single Name="Text" Type="string">		IF PowDone THEN // check PowerOn</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">57</Single>
@@ -105,7 +110,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">61</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		IF startMov THEN</Single>
+                <Single Name="Text" Type="string">		IF startMov THEN // check startMov</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">62</Single>
@@ -120,7 +125,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">76</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	20:</Single>
+                <Single Name="Text" Type="string">	20:  //set the axis value to the function block without movement</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">77</Single>
@@ -140,7 +145,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">84</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			StopTimer(in:= FALSE);</Single>
+                <Single Name="Text" Type="string">			StopTimer(in:= FALSE); // if startMov is true, unuse the stop function</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">85</Single>
@@ -155,7 +160,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">83</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			MovState := 0;</Single>
+                <Single Name="Text" Type="string">			MovState := 0; // if startMov is false, back to begin</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">78</Single>
@@ -165,12 +170,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">64</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	30:</Single>
+                <Single Name="Text" Type="string">	30:  // command, then begin the first movement towards neg direction with 180 degree</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">93</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		FirMov(axis := MovAxis, Execute := TRUE, Position := FirstPos</Single>
+                <Single Name="Text" Type="string">		FirMov(axis := MovAxis, Execute := TRUE, Position := FirstPos   </Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">95</Single>
@@ -190,17 +195,17 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">168</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		IF FirMov.Done THEN</Single>
+                <Single Name="Text" Type="string">		IF FirMov.Done THEN // after movement is done, check if a delay is needed</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">188</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF stopTime &gt; T#0S THEN</Single>
+                <Single Name="Text" Type="string">			IF stopTime &gt; T#0S THEN   // if a delay exist, execute it</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">171</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			StopTimer (in := TRUE, PT := stopTime);</Single>
+                <Single Name="Text" Type="string">				StopTimer (in := TRUE, PT := stopTime);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">169</Single>
@@ -210,7 +215,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">173</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			ELSE</Single>
+                <Single Name="Text" Type="string">			ELSE  // if not, skip to next step</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">170</Single>
@@ -230,12 +235,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">189</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	35:</Single>
+                <Single Name="Text" Type="string">	35: // execute the delay, if delay time is defined</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">162</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		StopTimer (in := TRUE, PT := stopTime);</Single>
+                <Single Name="Text" Type="string">		StopTimer (in := TRUE, PT := stopTime); // Timer:  Set IN to true, and after PT, the output Q will be true. It means, if Q is set to true, Pt time is already gone</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">178</Single>
@@ -260,7 +265,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">102</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	40:</Single>
+                <Single Name="Text" Type="string">	40:  // execute the second movement, axis rotates in pos direction with 180 degree</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">103</Single>
@@ -285,7 +290,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">180</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		IF SecMov.Done THEN</Single>
+                <Single Name="Text" Type="string">		IF SecMov.Done THEN // after the movement, check if a delay is needed</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">181</Single>
@@ -305,7 +310,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">186</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			ELSE</Single>
+                <Single Name="Text" Type="string">			ELSE // when not, restart the cycle with step 20</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">185</Single>
@@ -325,7 +330,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">190</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	45:</Single>
+                <Single Name="Text" Type="string">	45: // execute the delay for second movement</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">175</Single>
@@ -366,7 +371,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">131</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">PROGRAM SingleAxis</Single>
+                <Single Name="Text" Type="string">PROGRAM SingleAxis  // define a program, which realize the movement of one axis in both pos and neg direction.</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">132</Single>
@@ -391,7 +396,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">136</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	FirstPos : REAL := -180;</Single>
+                <Single Name="Text" Type="string">	FirstPos : REAL := -180; // negative direction with a value of 180</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">137</Single>
@@ -421,7 +426,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">141</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	stopTime : TIME := T#1S;</Single>
+                <Single Name="Text" Type="string">	stopTime : TIME := T#1S; // time = 1 s</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">142</Single>
@@ -436,10 +441,10 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">144</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	PowBlk : ArcaLibrary.MC_Power;</Single>
+                <Single Name="Text" Type="string">	PowBlk : ArcaLibrary.MC_Power;// call the function block ( Poweron/-off) in the Arc_Lib.</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">149</Single>
+                <Single Name="Id" Type="long">192</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	PowDone, PowErr : BOOL;</Single>
               </Single>
@@ -456,7 +461,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">152</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	FirMov : ArcaLibrary.MC_MoveAbsolute;</Single>
+                <Single Name="Text" Type="string">	FirMov : ArcaLibrary.MC_MoveAbsolute; // the function block (Move)</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">153</Single>
@@ -471,7 +476,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">155</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	dis_trig : r_trig;</Single>
+                <Single Name="Text" Type="string">	dis_trig : r_trig; // trigger</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">156</Single>
@@ -486,7 +491,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">157</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	StopTimer : ton;</Single>
+                <Single Name="Text" Type="string">	StopTimer : ton; // timer</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">158</Single>
@@ -501,14 +506,14 @@
             </Array>
           </Single>
         </Single>
-        <Single Name="UniqueIdGenerator" Type="string">190</Single>
+        <Single Name="UniqueIdGenerator" Type="string">195</Single>
         <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
         <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
         <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
       </Single>
-      <Single Name="ParentSVNodeGuid" Type="System.Guid">fa2632c8-a11c-4d71-8df4-00a64bb35d20</Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">d999feb1-20e1-4653-a41f-1865cc83f556</Single>
       <Array Name="Path" Type="string">
-        <Single Type="string">CODESYS_Control_x86_Arca_Control_SM</Single>
+        <Single Type="string">Device</Single>
         <Single Type="string">PLC Logic</Single>
         <Single Type="string">Application</Single>
       </Array>
