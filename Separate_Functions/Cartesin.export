@@ -15,13 +15,148 @@
           <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
           <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
         </Array>
-        <Single Name="Timestamp" Type="long">636484228525123680</Single>
+        <Single Name="Timestamp" Type="long">636613791861526247</Single>
       </Single>
       <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
         <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
         <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
           <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
             <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">296</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">// IO management</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">312</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">Dip(enable := TRUE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">337</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">DOP(enable := TRUE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">294</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">314</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">IF dip.DI_01 THEN	// enb button manage</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">315</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	enb_Timer(in:= TRUE, pt := enb_Delay_Time); // if button has been push more then 2s</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">329</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	IF enb_timer.Q AND NOT enable THEN	// enable robot</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">316</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		enb_Timer(in:= FALSE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">320</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		enable := TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">328</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	ELSIF enb_timer.Q AND enable THEN	// disable robot</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">322</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		enb_Timer(in:= FALSE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">317</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		enable := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">318</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">319</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">301</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	enb_Timer(in:= FALSE);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">323</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">324</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">325</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">IF dip.DI_02 THEN // if start button has been pressed then start mov robot</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">326</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	startMov := TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">327</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">303</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">304</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">IF NOT dip.DI_03 THEN // if stop button has been pressed then stop move robot</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">305</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	startMov := FALSE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">299</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">330</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">334</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">DOp(DO_07 := PowDone);	// if robot enabled then light on</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">295</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">121</Single>
                 <Null Name="Tag" />
@@ -33,14 +168,44 @@
                 <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">122</Single>
+                <Single Name="Id" Type="long">339</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">dis_trig(clk := NOT startMov);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">127</Single>
+                <Single Name="Id" Type="long">340</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">StopMov(AxesGroup := MovGroup, execute := dis_trig.Q, Deceleration := acc, jerk := jerk, BufferMode := mcAborting);</Single>
+                <Single Name="Text" Type="string">IF dis_trig.Q THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">341</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	stopEnb := TRUE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">342</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">343</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">StopMov(AxesGroup := MovGroup, execute := stopEnb AND NOT stopmov.Done, Deceleration := vel*100, jerk := vel*1000, BufferMode := mcAborting);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">344</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">IF stopmov.Done OR NOT enable THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">345</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	stopEnb := FALSE;	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">346</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">20</Single>
@@ -58,9 +223,14 @@
                 <Single Name="Text" Type="string">	MovState := 20;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">16</Single>
+                <Single Name="Id" Type="long">335</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">16</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">53</Single>
@@ -476,22 +646,22 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">136</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	FirstReachPos :  ARRAY [1..6] OF REAL := [0.562, 0.333, 0.606, 118.70, 167.069, -70.06];</Single>
+                <Single Name="Text" Type="string">	FirstReachPos :  ARRAY [1..6] OF REAL := [0.4, 0.1, 0.606, 180, 180.000, -0.0];</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">201</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	SecondReachPos :  ARRAY [1..6] OF REAL := [0.562, 0.3, 0.606, 118.70, 167.069, -70.06];</Single>
+                <Single Name="Text" Type="string">	SecondReachPos :  ARRAY [1..6] OF REAL := [0.4, -0.1, 0.606, 180, 180.000, -0.0];</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">202</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	FirstPerPos :  ARRAY [1..6] OF REAL := [0.562, 0.333, 0.636, 118.70, 167.069, -70.06];</Single>
+                <Single Name="Text" Type="string">	FirstPerPos :  ARRAY [1..6] OF REAL := [0.4, 0.1, 0.636, 180, 180.000, -0.0];</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">203</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	SecondPerPos :  ARRAY [1..6] OF REAL := [0.562, 0.3, 0.636, 118.70, 167.069, -70.06];</Single>
+                <Single Name="Text" Type="string">	SecondPerPos :  ARRAY [1..6] OF REAL := [0.4, -0.1, 0.636, 180, 180.000, -0.0];</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">137</Single>
@@ -506,17 +676,17 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">139</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Vel : REAL := 10;</Single>
+                <Single Name="Text" Type="string">	Vel : REAL := 0.5;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">140</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Acc : REAL := 10;</Single>
+                <Single Name="Text" Type="string">	Acc : REAL := 1.5;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">172</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Jerk : REAL := 10;</Single>
+                <Single Name="Text" Type="string">	Jerk : REAL := 4.5;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">170</Single>
@@ -584,14 +754,44 @@
                 <Single Name="Text" Type="string">	StopMov : ArcaLibrary.MC_GroupStop;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">155</Single>
+                <Single Name="Id" Type="long">348</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	dis_trig : r_trig;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">155</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	stopEnb: BOOL;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">291</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">292</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	// six axis IO, Button function management</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">293</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	DIp : Digital_Input;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">306</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	DOp : Digital_Output;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">307</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	enb_Timer : ton;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">347</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	enb_Delay_Time : TIME := T#1S;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">157</Single>
@@ -611,7 +811,7 @@
             </Array>
           </Single>
         </Single>
-        <Single Name="UniqueIdGenerator" Type="string">291</Single>
+        <Single Name="UniqueIdGenerator" Type="string">348</Single>
         <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
         <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
         <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
