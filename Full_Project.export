@@ -28,7 +28,7 @@
         </Dictionary>
         <Single Name="TypeGuid" Type="System.Guid">225bfe47-7336-4dbc-9419-4105a7c831fa</Single>
         <Null Name="EmbeddedTypeGuids" />
-        <Single Name="Timestamp" Type="long">636564462161485052</Single>
+        <Single Name="Timestamp" Type="long">636638198101250257</Single>
       </Single>
       <Single Name="Object" Type="{225bfe47-7336-4dbc-9419-4105a7c831fa}" Method="IArchivable">
         <Single Name="UniqueIdGenerator" Type="string">4105</Single>
@@ -339,7 +339,7 @@
                 <Array Name="components" Type="byte">AwE=</Array>
               </Single>
               <Single Type="{9ba826d6-fdbc-4f85-99e6-e813fdd446c4}" Method="IArchivable">
-                <Array Name="components" Type="byte">sPA=</Array>
+                <Array Name="components" Type="byte">wPA=</Array>
               </Single>
             </Array>
           </Single>
@@ -618,11 +618,7 @@
         <Single Name="DownloadContent" Type="bool">True</Single>
         <Single Name="GuidNetVarGVL" Type="System.Guid">f23c0bfc-7f6f-4509-a21f-9eb9d1df1cfe</Single>
         <Single Name="GuidMemSettings" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
-        <Single Name="BootAppSettings" Type="{2c29ea75-7cea-4f41-bab2-3128068c5387}" Method="IArchivable">
-          <Single Name="CreateAtDownload" Type="bool">True</Single>
-          <Single Name="CreateAtOnlineChange" Type="bool">False</Single>
-          <Single Name="EnableSystemCall" Type="bool">False</Single>
-        </Single>
+        <Null Name="BootAppSettings" />
         <Single Name="OverrideTargetMemorySizes" Type="bool">False</Single>
         <Single Name="TargetInputSize" Type="int">0</Single>
         <Single Name="TargetOutputSize" Type="int">0</Single>
@@ -796,6 +792,48 @@
         <Single Name="TypeGuid" Type="System.Guid">738bea1e-99bb-4f04-90bb-a7a567e74e3a</Single>
         <Null Name="EmbeddedTypeGuids" />
         <Single Name="Timestamp" Type="long">636555889188174779</Single>
+      </Single>
+      <Single Name="Object" Type="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" Method="IArchivable">
+        <Single Name="StructuredViewGuid" Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">fa2632c8-a11c-4d71-8df4-00a64bb35d20</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">CODESYS_Control_x86_Arca_Control_SM</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">65eb7a74-9784-4821-8e2c-a44473d1a177</Single>
+        <Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="Name" Type="string">Testment_Cartesian_Laser_Platform_Test</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">fa2632c8-a11c-4d71-8df4-00a64bb35d20</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">738bea1e-99bb-4f04-90bb-a7a567e74e3a</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long">636555892324091448</Single>
       </Single>
       <Single Name="Object" Type="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" Method="IArchivable">
         <Single Name="StructuredViewGuid" Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
@@ -1123,148 +1161,13 @@
           <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
           <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
         </Array>
-        <Single Name="Timestamp" Type="long">636578348236375253</Single>
+        <Single Name="Timestamp" Type="long">636577797333961558</Single>
       </Single>
       <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
         <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
         <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
           <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
             <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">296</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">// IO management</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">312</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">Dip(enable := TRUE);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">337</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">DOP(enable := TRUE);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">294</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">314</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">IF dip.DI_01 THEN	// enb button manage</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">315</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	enb_Timer(in:= TRUE, pt := enb_Delay_Time); // if button has been push more then 2s</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">329</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	IF enb_timer.Q AND NOT enable THEN	// enable robot</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">316</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		enb_Timer(in:= FALSE);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">320</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		enable := TRUE;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">328</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	ELSIF enb_timer.Q AND enable THEN	// disable robot</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">322</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		enb_Timer(in:= FALSE);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">317</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		enable := FALSE;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">318</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	END_IF</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">319</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">ELSE</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">301</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	enb_Timer(in:= FALSE);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">323</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">END_IF</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">324</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">325</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">IF dip.DI_02 THEN // if start button has been pressed then start mov robot</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">326</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	startMov := TRUE;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">327</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">END_IF</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">303</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">304</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">IF NOT dip.DI_03 THEN // if stop button has been pressed then stop move robot</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">305</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	startMov := FALSE;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">299</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">END_IF</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">330</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">334</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">DOp(DO_07 := PowDone);	// if robot enabled then light on</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">295</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
-              </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">121</Single>
                 <Null Name="Tag" />
@@ -1283,7 +1186,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">127</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">StopMov(AxesGroup := MovGroup, execute := dis_trig.Q, Deceleration := vel * 10, jerk := vel * 10, BufferMode := mcAborting);</Single>
+                <Single Name="Text" Type="string">StopMov(AxesGroup := MovGroup, execute := dis_trig.Q, Deceleration := acc, jerk := jerk, BufferMode := mcAborting);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">20</Single>
@@ -1301,14 +1204,9 @@
                 <Single Name="Text" Type="string">	MovState := 20;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">335</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">END_IF</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">16</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
+                <Single Name="Text" Type="string">END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">53</Single>
@@ -1754,17 +1652,17 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">139</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Vel : REAL := 0.5;</Single>
+                <Single Name="Text" Type="string">	Vel : REAL := 0.1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">140</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Acc : REAL := 1.5;</Single>
+                <Single Name="Text" Type="string">	Acc : REAL := 0.1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">172</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Jerk : REAL := 4.5;</Single>
+                <Single Name="Text" Type="string">	Jerk : REAL := 0.1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">170</Single>
@@ -1842,29 +1740,9 @@
                 <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">292</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	// six axis IO, Button function management</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">293</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	DIp : Digital_Input;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">306</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	DOp : Digital_Output;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">307</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	enb_Timer : ton;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">157</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	enb_Delay_Time : TIME := T#1S;</Single>
+                <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">158</Single>
@@ -1879,7 +1757,7 @@
             </Array>
           </Single>
         </Single>
-        <Single Name="UniqueIdGenerator" Type="string">337</Single>
+        <Single Name="UniqueIdGenerator" Type="string">291</Single>
         <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
         <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
         <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
@@ -1904,7 +1782,7 @@
           <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
           <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
         </Array>
-        <Single Name="Timestamp" Type="long">636590706746127022</Single>
+        <Single Name="Timestamp" Type="long">636639919195101772</Single>
       </Single>
       <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
         <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
@@ -1914,7 +1792,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">7</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">//Read_Basic_Info();</Single>
+                <Single Name="Text" Type="string">Read_Basic_Info();</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">8</Single>
@@ -1924,7 +1802,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">9</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">//SingleAxis();</Single>
+                <Single Name="Text" Type="string">SingleAxis();</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">12</Single>
@@ -1934,7 +1812,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">11</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">//Cartesin();</Single>
+                <Single Name="Text" Type="string">Cartesin();</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">10</Single>
@@ -1942,59 +1820,24 @@
                 <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">13</Single>
+                <Single Name="Id" Type="long">16</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">//Servo_Testment_Main();</Single>
+                <Single Name="Text" Type="string">Servo_Testment_Main();</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">23</Single>
+                <Single Name="Id" Type="long">17</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string"></Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">24</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">tryHand(enable := enb, internal_hand_enable := enb, startMov := startmov, ovr := ovr</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">14</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		, GrabFirstAxis := GrabFirstAxis, GrabLastAxis := GrabLastAxis, GrabAxisAllowToMov := GrabAxisAllowToMov);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">26</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">28</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">readAxis[0](axis := GrabFirstAxis, enable := TRUE);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">29</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">readAxis[1](axis := GrabLastAxis - 1, enable := TRUE);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">30</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">readAxis[2](axis := GrabLastAxis, enable := TRUE);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">31</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">readAxis[0].Pos;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">32</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">readAxis[1].Pos;</Single>
+                <Single Name="Text" Type="string">doTest(enable := enb, offset := os, value := value);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">5</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">readAxis[2].Pos;</Single>
+                <Single Name="Text" Type="string">ditest(enable := enb, offset := osin, value =&gt; valuein);</Single>
               </Single>
             </Array>
           </Single>
@@ -2008,49 +1851,79 @@
                 <Single Name="Text" Type="string">PROGRAM Main</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">15</Single>
+                <Single Name="Id" Type="long">13</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">VAR</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">16</Single>
+                <Single Name="Id" Type="long">14</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	tryHand : Grab_Demo;</Single>
+                <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">18</Single>
+                <Single Name="Id" Type="long">15</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	enb : BOOL;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">19</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	startMov :BOOL;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">20</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	ovr : INT := 10;</Single>
+                <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">21</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GrabFirstAxis : BYTE := 0;</Single>
+                <Single Name="Text" Type="string">	doTest: Arcalibrary.ECAT_SetPdo_U8;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">22</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GrabLastAxis : BYTE := 2;</Single>
+                <Single Name="Text" Type="string">	doTest1: Arcalibrary.ECAT_SetPdo_U16;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">24</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	doTest2: Arcalibrary.ECAT_SetPdo_U64;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">25</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GrabAxisAllowToMov : ARRAY [0..2] OF BOOL := [1,1,1];</Single>
+                <Single Name="Text" Type="string">	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">28</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	ditest:Arcalibrary.ECAT_GetPdi_U8;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">29</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	ditest1:Arcalibrary.ECAT_GetPdi_S16;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">3</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	readAxis : ARRAY [0..2] OF ArcaLibrary.MCAT_ReadAxisMeasures;</Single>
+                <Single Name="Text" Type="string">	ditest2:Arcalibrary.ECAT_GetPdi_S64;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">18</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	enb: BOOL;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">19</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	os: WORD;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">32</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	value: BYTE;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">33</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	osin: WORD;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">20</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	valueIn : BYTE;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">4</Single>
@@ -6155,48 +6028,13 @@
           <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
           <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
         </Array>
-        <Single Name="Timestamp" Type="long">636590703092651423</Single>
+        <Single Name="Timestamp" Type="long">636555889186331945</Single>
       </Single>
       <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
         <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
         <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
           <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
             <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2511</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">MinClampAng := grab_angle_min;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2501</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">MaxClampAng := grab_angle_max;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2512</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">MinRootAng := Root_min;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2502</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">MaxRootAng := Root_max;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2510</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">MinTipAng := Tip_min;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2513</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">MaxTipAng := Tip_max;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2500</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
-              </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">43</Single>
                 <Null Name="Tag" />
@@ -6218,29 +6056,54 @@
                 <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2522</Single>
+                <Single Name="Id" Type="long">60</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">_ov := overfeed;</Single>
+                <Single Name="Text" Type="string">IF overfeed &gt; 90 THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2523</Single>
+                <Single Name="Id" Type="long">62</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">IF _ov &gt; 100 THEN</Single>
+                <Single Name="Text" Type="string">	overfeed := 90;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2524</Single>
+                <Single Name="Id" Type="long">63</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	_ov := 100;</Single>
+                <Single Name="Text" Type="string">ELSIF overfeed &lt; 0 THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2525</Single>
+                <Single Name="Id" Type="long">61</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">ELSIF _ov &lt; 1 THEN</Single>
+                <Single Name="Text" Type="string">	overfeed := 0;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2526</Single>
+                <Single Name="Id" Type="long">64</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	_ov := 1;</Single>
+                <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">106</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">103</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">// read current virtual robot postion</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">104</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">ReadCurrentPos(axesGroup := 0, execute := state &gt; 0, CoordSystem:=mcMcs, Position=&gt;CurrPos);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">124</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">IF ReadCurrentPos.Error THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">125</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	state := -10;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">589</Single>
@@ -6248,14 +6111,9 @@
                 <Single Name="Text" Type="string">END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2484</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">42</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">Finger_Movement(firstAuxAxisNum := faxis, LastAuxAxisNum := laxis, enable := state &gt; 0);</Single>
+                <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">649</Single>
@@ -6313,24 +6171,9 @@
                 <Single Name="Text" Type="string">		error := TRUE;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2540</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		Err_Message := error_message.Err_AuxAxis_Movement_Cannot_read_virture_robot_position;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2542</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	-1:</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2543</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		error := TRUE;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">138</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		// can not handle more than three axis</Single>
+                <Single Name="Text" Type="string">		Err_Message := error_message.Err_AuxAxis_Movement_Cannot_read_virture_robot_position;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">35</Single>
@@ -6358,44 +6201,14 @@
                 <Single Name="Text" Type="string">		</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2531</Single>
+                <Single Name="Id" Type="long">631</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">		IF Enable THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2532</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">			faxis := GrabFirstAxis;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2533</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">			laxis := GrabLastAxis;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2536</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">			IF (laxis - faxis) &lt;= 2 THEN</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2537</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">				state := 10;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2539</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">			ELSE</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2535</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">				state := -1;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">39</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			END_IF</Single>
+                <Single Name="Text" Type="string">			state := 10;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">452</Single>
@@ -6418,29 +6231,9 @@
                 <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2488</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		// set position</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2489</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2490</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		// clamp Angle</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2491</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		clamp(current := Grab.Clamp_Angle, first_value := grab_angle_min, second_value := grab_angle_max, newV =&gt; g_grab[0]);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2451</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		</Single>
+                <Single Name="Text" Type="string">		// set position</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2452</Single>
@@ -6468,9 +6261,54 @@
                 <Single Name="Text" Type="string">		clamp(current := Grab.Tip_Angle, first_value := Tip_min, second_value := Tip_max, newV =&gt; g_grab[2]);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">207</Single>
+                <Single Name="Id" Type="long">2457</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">		</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2458</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		// clamp Tip_Angle</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2363</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		clamp(current := Grab.Clamp_Angle, first_value := grab_angle_min, second_value := grab_angle_max, newV =&gt; g_grab[3]);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">115</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">108</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		// take a judge to find where is the robot and give a different destination</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">109</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF ABS(CurrPos[1] - Position_0[1]) &gt; MaxDifference THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">112</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			RobotMovPos := Position_0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">114</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		ELSE </Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">110</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			RobotMovPos := Position_1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">207</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">157</Single>
@@ -6478,69 +6316,84 @@
                 <Single Name="Text" Type="string">		</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2514</Single>
+                <Single Name="Id" Type="long">158</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">		// asign value for hand movment block</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">162</Single>
+                <Single Name="Id" Type="long">159</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		Give_Finger_Pos_Counter := 0;</Single>
+                <Single Name="Text" Type="string">		Pos_For_Hand_Block.Position := RobotMovPos;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2476</Single>
+                <Single Name="Id" Type="long">160</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		FOR MultiMov_for_counter := faxis TO laxis DO</Single>
+                <Single Name="Text" Type="string">		Pos_For_Hand_Block.AxesPosition:=AxesPosForExternal;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2487</Single>
+                <Single Name="Id" Type="long">161</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			AxisAllowToMov[MultiMov_for_counter] := GrabAxisAllowToMov[MultiMov_for_counter - faxis];</Single>
+                <Single Name="Text" Type="string">		Pos_For_Hand_Block.AuxAxes:=g_grab;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2544</Single>
+                <Single Name="Id" Type="long">180</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			GivHandPos[MultiMov_for_counter] := g_grab[Give_Finger_Pos_Counter];</Single>
+                <Single Name="Text" Type="string">		Pos_For_Hand_Block.CoordSystem:=CoordSys1;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2477</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">			Give_Finger_Pos_Counter := Give_Finger_Pos_Counter + 1;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">635</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		END_FOR</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2515</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		Finger_Movement(Execute:=FALSE);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2516</Single>
+                <Single Name="Id" Type="long">181</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">		</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2517</Single>
+                <Single Name="Id" Type="long">182</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		givenVel := handVel * (_ov/100.0);</Single>
+                <Single Name="Text" Type="string">		Set1.Velocity:=ToolMoveVel;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2518</Single>
+                <Single Name="Id" Type="long">183</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		givenAcc := handAcc * (_ov/100.0);</Single>
+                <Single Name="Text" Type="string">		Set1.Acceleration:=ToolMoveAcc;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2520</Single>
+                <Single Name="Id" Type="long">184</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		givenJerk := handJerk * (_ov/100.0);</Single>
+                <Single Name="Text" Type="string">		Set1.Deceleration:=ToolMoveAcc;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">185</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		Set1.Jerk:=ToolMoveJrk;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">186</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		Set1.OverfeedPerc:=Overfeed;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">187</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		Set1.BufferMode:=bufmode;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">188</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		Set1.TransitionMode:=transition;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">162</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		Set1.TransitionParameter:=tmPar;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">635</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1282</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
+                <Single Name="Text" Type="string">		Finger_Movement(AxesGroup:=0, Execute:=FALSE);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">118</Single>
@@ -6548,24 +6401,34 @@
                 <Single Name="Text" Type="string">		State := 20;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2485</Single>
+                <Single Name="Id" Type="long">119</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	20:</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2486</Single>
+                <Single Name="Id" Type="long">637</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		Finger_Movement(execute := TRUE, Axis_Mov_Indicator := AxisAllowToMov, axis_mov_pos := GivHandPos</Single>
+                <Single Name="Text" Type="string">		IF (NOT enable) THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">638</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			State := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">639</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">640</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			, vel := givenVel, acc :=givenAcc, dec := givenAcc, jerk := givenJerk, MoveMethod := 10);</Single>
+                <Single Name="Text" Type="string">		</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">641</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		//Finger_Movement(AxesGroup:=0, Execute:=TRUE, Position:=Pos_For_Hand_Block, Settings:=Set1, active =&gt; isMoving);</Single>
+                <Single Name="Text" Type="string">		Finger_Movement(AxesGroup:=0, Execute:=TRUE, Position:=Pos_For_Hand_Block, Settings:=Set1, active =&gt; isMoving);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">642</Single>
@@ -6578,14 +6441,9 @@
                 <Single Name="Text" Type="string">		IF Finger_Movement.Done THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2527</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">			Finger_Movement(Execute:=FALSE);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">1280</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			done := TRUE;</Single>
+                <Single Name="Text" Type="string">			Finger_Movement(AxesGroup:=0, Execute:=FALSE);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">647</Single>
@@ -6595,7 +6453,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">648</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">		ELSIF Finger_Movement.Error THEN</Single>
+                <Single Name="Text" Type="string">		ELSIF Finger_Movement.Error OR Finger_Movement.CommandAborted THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">644</Single>
@@ -6608,14 +6466,14 @@
                 <Single Name="Text" Type="string">		END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2528</Single>
+                <Single Name="Id" Type="long">1256</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	50:</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">36</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			done := TRUE;</Single>
+                <Single Name="Text" Type="string">		done := TRUE;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">22</Single>
@@ -6654,24 +6512,9 @@
                 <Single Name="Text" Type="string">	OverFeed : INT;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2475</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Grab : Grab_Command;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2473</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GrabFirstAxis : BYTE;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2474</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GrabLastAxis : BYTE;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2396</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GrabAxisAllowToMov : ARRAY [0..2] OF BOOL;</Single>
+                <Single Name="Text" Type="string">	Grab : Grab_Command;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2397</Single>
@@ -6699,39 +6542,9 @@
                 <Single Name="Text" Type="string">	Error : BOOL;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2504</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Err_Message : Error_Message;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2496</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	MinClampAng : REAL;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2497</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	MaxClampAng : REAL;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2507</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	MinRootAng : REAL;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2498</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	MaxRootAng : REAL;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2508</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	MinTipAng : REAL;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2402</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	MaxTipAng : REAL;</Single>
+                <Single Name="Text" Type="string">	Err_Message : Error_Message;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2403</Single>
@@ -6759,69 +6572,114 @@
                 <Single Name="Text" Type="string">	//movment settings</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2463</Single>
+                <Single Name="Id" Type="long">2408</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Finger_Movement: MultiAxisABSMove;</Single>
+                <Single Name="Text" Type="string">	Finger_Movement: ArcaLibrary.MCAT_MoveDirectAbsolute;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2464</Single>
+                <Single Name="Id" Type="long">2409</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	MultiMov_for_counter : INT;</Single>
+                <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2465</Single>
+                <Single Name="Id" Type="long">2410</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Give_Finger_Pos_Counter : INT;</Single>
+                <Single Name="Text" Type="string">	ReadCurrentPos : ArcaLibrary.MC_GroupReadActualPosition;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2466</Single>
+                <Single Name="Id" Type="long">2411</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GivHandPos : ARRAY [0..255] OF REAL;</Single>
+                <Single Name="Text" Type="string">	CurrPos : ARRAY [1..6] OF REAL;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2467</Single>
+                <Single Name="Id" Type="long">2412</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	handVel : REAL := 402;	// 402 = 67rpm</Single>
+                <Single Name="Text" Type="string">	CoordSys1: ArcaLibrary.MC_COORD_SYSTEM := mcMCS;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2468</Single>
+                <Single Name="Id" Type="long">2413</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	handAcc : REAL := 4020;</Single>
+                <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2469</Single>
+                <Single Name="Id" Type="long">2414</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	handJerk : REAL := 40200;</Single>
+                <Single Name="Text" Type="string">	Set1: ArcaLibrary.MCAT_Settings;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2470</Single>
+                <Single Name="Id" Type="long">2415</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	givenVel, givenAcc, givenJerk : REAL;</Single>
+                <Single Name="Text" Type="string">	ToolMoveVel:REAL:=100;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2471</Single>
+                <Single Name="Id" Type="long">2416</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	ArrayTotalNum : INT;</Single>
+                <Single Name="Text" Type="string">	ToolMoveAcc:REAL:=500;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2478</Single>
+                <Single Name="Id" Type="long">2417</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	ArrayFirstRow : INT;</Single>
+                <Single Name="Text" Type="string">	ToolMoveJrk:REAL:=2500;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2479</Single>
+                <Single Name="Id" Type="long">2418</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	AxisAllowToMov : ARRAY [0..255] OF BOOL;</Single>
+                <Single Name="Text" Type="string">	bufmode: ArcaLibrary.MC_BUFFER_MODE:=mcBuffered;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2480</Single>
+                <Single Name="Id" Type="long">2419</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	faxis: BYTE;	// first finge axis number</Single>
+                <Single Name="Text" Type="string">	transition: ArcaLibrary.MC_TRANSITION_MODE:=tmRelativeCornerDistance;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2420</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	tmPar: ARRAY [1..12] OF REAL :=[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2421</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2422</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	Pos_For_Hand_Block : ArcaLibrary.MCAT_Position;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2423</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	Position_0: ARRAY [1..6] OF REAL :=[0.300, -0.100, 0.200, 160.0, 180.0, 0.0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2424</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	Position_1: ARRAY [1..6] OF REAL :=[0.500, -0.100, 0.200, 160.0, 180.0, 0.0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2425</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	RobotMovPos: ARRAY [1..6] OF REAL :=[0.50, -0.100, 0.200, 160.0, 180.0, 0.0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2426</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2427</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	AxesPosForExternal: ARRAY [1..32] OF REAL;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2428</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2429</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	laxis : BYTE;	// last finger axis number</Single>
+                <Single Name="Text" Type="string">	MaxDifference : REAL := 0.005;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2430</Single>
@@ -6836,7 +6694,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2432</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	g_grab: ARRAY [0..32] OF REAL;</Single>
+                <Single Name="Text" Type="string">	g_grab: ARRAY [1..32] OF REAL;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2433</Single>
@@ -6844,34 +6702,19 @@
                 <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2493</Single>
+                <Single Name="Id" Type="long">2434</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	// max degree for every motor</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2494</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	grab_angle_min : REAL := 0;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2495</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	grab_angle_max : REAL := -35;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2434</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2435</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Root_min : REAL := 0;</Single>
+                <Single Name="Text" Type="string">	Root_min : REAL := 235;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2436</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Root_max : REAL := -120;</Single>
+                <Single Name="Text" Type="string">	Root_max : REAL := 350;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2437</Single>
@@ -6881,12 +6724,32 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2438</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Tip_min : REAL := 0;</Single>
+                <Single Name="Text" Type="string">	Tip_min : REAL := 140;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2439</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	Tip_max : REAL := 40;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2440</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2441</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2442</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	grab_angle_min : REAL := 0;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2443</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	Tip_max : REAL := -85;</Single>
+                <Single Name="Text" Type="string">	grab_angle_max : REAL := 180;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2444</Single>
@@ -6914,14 +6777,9 @@
                 <Single Name="Text" Type="string">	</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2521</Single>
+                <Single Name="Id" Type="long">2449</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	clamp : Value_Clamp;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">2519</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	_ov: REAL;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2450</Single>
@@ -6936,7 +6794,7 @@
             </Array>
           </Single>
         </Single>
-        <Single Name="UniqueIdGenerator" Type="string">2544</Single>
+        <Single Name="UniqueIdGenerator" Type="string">2458</Single>
         <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
         <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
         <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
@@ -6982,7 +6840,7 @@
           <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
           <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
         </Array>
-        <Single Name="Timestamp" Type="long">636590710062268323</Single>
+        <Single Name="Timestamp" Type="long">636555889186552282</Single>
       </Single>
       <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
         <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
@@ -7080,31 +6938,6 @@
                 <Single Name="Text" Type="string">	_enabled := IsEnabled := powerOnHand.Done;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">372</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">END_IF</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">373</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string"></Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">376</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">IF _enabled AND NOT internal_hand_enable THEN</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">377</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	powerOnHand(enable := enable);</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">375</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	_enabled := IsEnabled := powerOnHand.Done;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">137</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">END_IF</Single>
@@ -7172,17 +7005,17 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">288</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			GrabCmd.Root_Angle := GrabMov.minRootAng;	// all open</Single>
+                <Single Name="Text" Type="string">			GrabCmd.Root_Angle := 200;	// all open</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">286</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			GrabCmd.Tip_Angle := GrabMov.minTipAng;</Single>
+                <Single Name="Text" Type="string">			GrabCmd.Tip_Angle := 200;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">287</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">			GrabCmd.Clamp_Angle := GrabMov.minClampAng;</Single>
+                <Single Name="Text" Type="string">			GrabCmd.Clamp_Angle := 0;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">51</Single>
@@ -7210,14 +7043,9 @@
                 <Single Name="Text" Type="string">	10:</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">342</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">		GrabMov(Enable := TRUE, overfeed := ovr,Grab := GrabCmd, isMoving =&gt; isMoving</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">60</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">				, GrabFirstAxis := GrabFirstAxis, GrabLastAxis:= GrabLastAxis, GrabAxisAllowToMov:= GrabAxisAllowToMov);</Single>
+                <Single Name="Text" Type="string">		GrabMov(Enable := TRUE, overfeed := ovr,Grab := GrabCmd, isMoving =&gt; isMoving);</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">61</Single>
@@ -7265,24 +7093,34 @@
                 <Single Name="Text" Type="string">					IF cycleCounter &lt;= 5 THEN	// first movement, root as clamp</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">379</Single>
+                <Single Name="Id" Type="long">289</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">						IF (cycleCounter MOD 2) = 1 THEN</Single>
+                <Single Name="Text" Type="string">						IF GrabCmd.Root_Angle &lt;&gt; 400 THEN // if not clamp</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">344</Single>
+                <Single Name="Id" Type="long">290</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := GrabMov.minRootAng;</Single>
+                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := 400;	// root in max</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">380</Single>
+                <Single Name="Id" Type="long">293</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := 90;	// tip mov in middle</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">295</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">						ELSE</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">346</Single>
+                <Single Name="Id" Type="long">296</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := GrabMov.MaxRootAng;</Single>
+                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := 200;	// root in open</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">291</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := 200;	// tip in open</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">273</Single>
@@ -7290,29 +7128,39 @@
                 <Single Name="Text" Type="string">						END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">347</Single>
+                <Single Name="Id" Type="long">297</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">					ELSIF cycleCounter &lt;= 11 THEN	// second movement, show tip movement</Single>
+                <Single Name="Text" Type="string">					ELSIF cycleCounter &lt;= 9 THEN	// second movement, show tip movement</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">382</Single>
+                <Single Name="Id" Type="long">310</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">						IF (cycleCounter MOD 2) = 1 THEN</Single>
+                <Single Name="Text" Type="string">						IF GrabCmd.Tip_Angle &lt;&gt; 40 THEN // if not clmap</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">349</Single>
+                <Single Name="Id" Type="long">299</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := GrabMov.MinTipAng;</Single>
+                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := 200;	// root in open</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">381</Single>
+                <Single Name="Id" Type="long">300</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := 40;	// tip max</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">301</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">						ELSE</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">351</Single>
+                <Single Name="Id" Type="long">302</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := GrabMov.MaxTipAng;</Single>
+                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := 200;	// root in open</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">303</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := 200;	// tip in open</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">274</Single>
@@ -7320,34 +7168,39 @@
                 <Single Name="Text" Type="string">						END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">368</Single>
+                <Single Name="Id" Type="long">280</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">					ELSIF cyclecounter &lt;= 17 THEN	// second movement, tip as clamp</Single>
+                <Single Name="Text" Type="string">					ELSIF cyclecounter &lt;= 15 THEN	// second movement, tip as clamp</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">352</Single>
+                <Single Name="Id" Type="long">304</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := GrabMov.MaxRootAng/2;</Single>
+                <Single Name="Text" Type="string">						IF GrabCmd.Tip_Angle &lt;&gt; 40 THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">384</Single>
+                <Single Name="Id" Type="long">305</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">						IF (cycleCounter MOD 2) = 1 THEN</Single>
+                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := 300;	// root mov to mid</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">354</Single>
+                <Single Name="Id" Type="long">306</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := GrabMov.MinTipAng;</Single>
+                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := 40;	// tip max</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">383</Single>
+                <Single Name="Id" Type="long">307</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">						ELSE</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">356</Single>
+                <Single Name="Id" Type="long">308</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := GrabMov.MaxTipAng;</Single>
+                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := 200;	// root in open</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">309</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := 140;	// tip in open</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">311</Single>
@@ -7355,39 +7208,29 @@
                 <Single Name="Text" Type="string">						END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">369</Single>
+                <Single Name="Id" Type="long">312</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">					ELSIF cyclecounter &lt;= 23 THEN	// third movement, show clamp angle</Single>
+                <Single Name="Text" Type="string">					ELSIF cyclecounter &lt;= 18 THEN	// third movement, show clamp angle</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">370</Single>
+                <Single Name="Id" Type="long">313</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">						GrabCmd.Root_Angle := GrabMov.minRootAng;</Single>
+                <Single Name="Text" Type="string">						IF GrabCmd.Clamp_Angle &lt;&gt; 180 THEN</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">361</Single>
+                <Single Name="Id" Type="long">315</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">						GrabCmd.Tip_Angle := GrabMov.minTipAng;</Single>
+                <Single Name="Text" Type="string">							GrabCmd.Clamp_Angle := 180;	// clamp angle to max</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">385</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">						IF (cycleCounter MOD 2) = 1 THEN;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">364</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">							GrabCmd.Clamp_Angle := GrabMov.MinClampAng;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">386</Single>
+                <Single Name="Id" Type="long">316</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">						ELSE</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">367</Single>
+                <Single Name="Id" Type="long">318</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">							GrabCmd.Clamp_Angle := GrabMov.MaxClampAng;</Single>
+                <Single Name="Text" Type="string">							GrabCmd.Clamp_Angle := 0;	// clamp angle to min</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">320</Single>
@@ -7395,9 +7238,44 @@
                 <Single Name="Text" Type="string">						END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">319</Single>
+                <Single Name="Id" Type="long">326</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">					ELSIF cyclecounter &lt;= 24 THEN	// fouth movement, tip as clamp in another clamp angle</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">327</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">						IF GrabCmd.Tip_Angle &lt;&gt; 40 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">328</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := 300;	// root mov to mid</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">329</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := 40;	// tip max</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">330</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">						ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">331</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">							GrabCmd.Root_Angle := 200;	// root in open</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">332</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">							GrabCmd.Tip_Angle := 140;	// tip in open</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">319</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">						END_IF</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">67</Single>
@@ -7456,7 +7334,7 @@
                 <Single Name="Text" Type="string">VAR_INPUT</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">341</Single>
+                <Single Name="Id" Type="long">168</Single>
                 <Null Name="Tag" />
                 <Single Name="Text" Type="string">	enable :BOOL;</Single>
               </Single>
@@ -7471,24 +7349,9 @@
                 <Single Name="Text" Type="string">	startMov :BOOL;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">338</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	ovr : INT;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">339</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GrabFirstAxis : BYTE;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">340</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GrabLastAxis : BYTE;</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">171</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	GrabAxisAllowToMov : ARRAY [0..2] OF BOOL;</Single>
+                <Single Name="Text" Type="string">	ovr : INT;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">172</Single>
@@ -7536,14 +7399,9 @@
                 <Single Name="Text" Type="string"></Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
-                <Single Name="Id" Type="long">334</Single>
-                <Null Name="Tag" />
-                <Single Name="Text" Type="string">VAR</Single>
-              </Single>
-              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">182</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	</Single>
+                <Single Name="Text" Type="string">VAR</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">183</Single>
@@ -7563,12 +7421,12 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">186</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	start_cycle : INT := -1;	// start cycle from a number</Single>
+                <Single Name="Text" Type="string">	start_cycle : INT := 1;	// start cycle from a number</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">187</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	total_cycle_time : INT := 23; //	max cycle time</Single>
+                <Single Name="Text" Type="string">	total_cycle_time : INT := 24; //	max cycle time</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">188</Single>
@@ -7578,7 +7436,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">189</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	cycleDelayTime : TIME := T#2000MS;	// delay time between every gesture</Single>
+                <Single Name="Text" Type="string">	cycleDelayTime : TIME := T#500MS;	// delay time between every gesture</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">190</Single>
@@ -7643,7 +7501,7 @@
             </Array>
           </Single>
         </Single>
-        <Single Name="UniqueIdGenerator" Type="string">386</Single>
+        <Single Name="UniqueIdGenerator" Type="string">332</Single>
         <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
         <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
         <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
@@ -7689,7 +7547,7 @@
           <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
           <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
         </Array>
-        <Single Name="Timestamp" Type="long">636590704592019490</Single>
+        <Single Name="Timestamp" Type="long">636555889187053040</Single>
       </Single>
       <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
         <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
@@ -11000,7 +10858,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2825</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	HandType : PhysicalHandType;	</Single>
+                <Single Name="Text" Type="string">	HandType : PhysicalHandType;</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">2827</Single>
@@ -12907,7 +12765,7 @@
           <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
           <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
         </Array>
-        <Single Name="Timestamp" Type="long">636578345104494226</Single>
+        <Single Name="Timestamp" Type="long">636555871982320193</Single>
       </Single>
       <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
         <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
@@ -12982,7 +12840,7 @@
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">17</Single>
                 <Null Name="Tag" />
-                <Single Name="Text" Type="string">	IF Set_Do[forCounter] THEN	// if out put is true</Single>
+                <Single Name="Text" Type="string">	IF DO_Array[forCounter] THEN	// if out put is true</Single>
               </Single>
               <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
                 <Single Name="Id" Type="long">18</Single>
@@ -16340,6 +16198,203 @@
         <Single Type="string">PLC Logic</Single>
         <Single Type="string">Application</Single>
         <Single Type="string">TCPIP Control</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">e44c1ea0-e31f-4560-8da6-d7ef7a890326</Single>
+        <Single Name="ParentGuid" Type="System.Guid">fa2632c8-a11c-4d71-8df4-00a64bb35d20</Single>
+        <Single Name="Name" Type="string">Cartesian_Laser_Circle_Testment</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">65eb7a74-9784-4821-8e2c-a44473d1a177</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">636556811841174514</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">25</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">34</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">enb_axis_and_robot(enable := EnableRobot);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">33</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">36</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">if not enablerobot then</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">37</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	circle_State := 0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">14</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">15</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">CASE circle_State OF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">30</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	0:</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">19</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF enb_axis_and_robot.Done THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">20</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			circle_State := 10;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">38</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">39</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	10:</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">16</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">5</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_CASE</Single>
+              </Single>
+            </Array>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">2</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">PROGRAM Cartesian_Laser_Circle_Testment	// draw circle as quick as possible</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">21</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">VAR</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">18</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">23</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	EnableRobot : BOOL;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">28</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">6</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	enb_axis_and_robot : AuxAxis_PowerOn;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">10</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	circle_State : INT;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">12</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	col_begain : ARRAY [1..6] OF REAL := [0,0,0,0,0,0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">7</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	row_begain : ARRAY [1..6] OF REAL := [0,0,0,0,0,0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">9</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	col_num_total: BYTE := 10;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">3</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	row_num_total : BYTE := 10;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">4</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_VAR</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">1</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+            </Array>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">39</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">65eb7a74-9784-4821-8e2c-a44473d1a177</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">CODESYS_Control_x86_Arca_Control_SM</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Testment_Cartesian_Laser_Platform_Test</Single>
       </Array>
       <Single Name="Index" Type="int">-1</Single>
     </Single>
